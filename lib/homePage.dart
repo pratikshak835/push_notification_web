@@ -33,10 +33,10 @@ class _DashboardState extends State<Dashboard> {
         context: context,
         builder: ((context) {
           return Padding(
-            padding: const EdgeInsets.all(.0),
+            padding: const EdgeInsets.all(8.0),
             child: SizedBox(
-              width: 100,
-              height: 50,
+              width: notification.body != null ? 200 : 250,
+              height: 100,
               child: Column(
                 children: [
                   Text(notification.title!),

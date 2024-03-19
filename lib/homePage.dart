@@ -13,10 +13,10 @@ class _DashboardState extends State<Dashboard> {
   void initState() {
     getToken();
     getPermission();
-    FirebaseMessaging.onMessage.listen(showFlutterNotification);
     FirebaseMessaging.onBackgroundMessage((message) async {
       debugPrint("onBackgroundMessage ${message.messageId}");
     });
+    FirebaseMessaging.onMessage.listen(showFlutterNotification);
     super.initState();
   }
 

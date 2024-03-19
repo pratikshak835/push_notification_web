@@ -27,7 +27,6 @@ class _DashboardState extends State<Dashboard> {
 
   void showFlutterNotification(RemoteMessage message) {
     RemoteNotification? notification = message.notification;
-    AndroidNotification? android = message.notification?.android;
     debugPrint("Notification Title...${notification!.title}");
     showModalBottomSheet(
         context: context,
@@ -61,7 +60,7 @@ class _DashboardState extends State<Dashboard> {
       sound: true,
     );
 
-    print('User granted permission: ${settings.authorizationStatus}');
+    debugPrint('User granted permission: ${settings.authorizationStatus}');
   }
 
   @override

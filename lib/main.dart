@@ -36,7 +36,7 @@ void main() async {
   final token = await messaging.getToken(
       vapidKey:
           "BKQ0bcRfau7CMZkBuiPz8WMgsrmJdTr3xNzNxm35vsCkn0Hw7gnvzW7eGveLvb0bcG23-cWpF9A_f0Tr919-LTs");
-  debugPrint(token);
+  // debugPrint(token);
   runApp(const MyApp());
 }
 
